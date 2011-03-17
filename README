@@ -1,0 +1,3 @@
+Creates a page located at /version.txt with the git SHA of the release after a Capistrano deploy.
+
+That's all it does.
