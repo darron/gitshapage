@@ -1,14 +1,15 @@
-Creates a page located at /version.txt with the git SHA of the release after a Capistrano deploy.
+Creates a page located in the public directory with the git SHA of the release after a Capistrano deploy.
 
 That's all it does.
 
 If you're using bundler - put this in your Gemfile:
 
-`gem "gitshapage", "0.0.3", :require => false`
+`gem "gitshapage", "0.0.5", :require => false`
 
 Put this in your config/deploy.rb:
 
 `require "gitshapage"`
+`set :gitshapage_url, 'put-your-page-name-here.txt'`
 
 After deploy:restart it will create the page.
 
