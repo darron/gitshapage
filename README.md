@@ -4,14 +4,18 @@ That's all it does.
 
 If you're using bundler - put this in your Gemfile:
 
-`gem "gitshapage", "0.0.5", :require => false`
+`gem "gitshapage", "0.0.6", :require => false`
 
 Put this in your config/deploy.rb:
 
 `require "gitshapage"`
 
-`set :gitshapage_url, 'put-your-page-name-here.txt'`
+After deploy:restart it will create the page - by default it puts it at public/version.txt.
 
-After deploy:restart it will create the page.
+If you'd like to put or name it something different:
 
-Don't put it in your Rails config/environment.rb - that does bad things.
+`set :gitshapage_directory, "directory/goes/here"`
+
+`set :gitshapage_url, "filename-goes-here.txt"`
+
+NOTE: Don't put it in your Rails config/environment.rb - that does bad things.
