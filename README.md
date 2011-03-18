@@ -9,6 +9,7 @@ If you're using bundler - put this in your Gemfile:
 Put this in your config/deploy.rb:
 
 `require "gitshapage"`
+
 `set :gitshapage_url, 'put-your-page-name-here.txt'`
 
 After deploy:restart it will create the page.
