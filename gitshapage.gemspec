@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name              = "gitshapage"
-  s.version           = "0.0.3"
+  s.version           = "0.0.4"
   s.date              = Time.now.strftime('%Y-%m-%d')
   s.summary           = "Creates a page located at /version.txt with the git SHA of the release after a Capistrano deploy."
   s.homepage          = "http://github.com/darron/gitshapage"
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors           = [ "Darron Froese" ]
   s.has_rdoc          = false
 
-  s.files             = %w( README LICENSE.md )
+  s.files             = %w( README.md LICENSE.md )
   s.files            += Dir.glob("lib/**/*")
 
   s.add_dependency    "capistrano", ">= 2"
